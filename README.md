@@ -23,8 +23,6 @@ Python instead.
 One can also use Ribasim Python to build entire models from base data, such that your model
 setup is fully reproducible.
 
-The package is [registered in PyPI](https://pypi.org/project/ribasim/) and can therefore
-be installed with `pip install ribasim`.
 For documentation please see the [examples](https://deltares.github.io/Ribasim/python/examples.html) and [API reference](https://deltares.github.io/Ribasim/python/reference/).
 
 
