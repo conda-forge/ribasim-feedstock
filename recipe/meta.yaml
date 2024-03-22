@@ -1,5 +1,5 @@
 {% set name = "ribasim" %}
-{% set version = "2024.4.0" %}
+{% set version = "2024.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 095d0970789997159b39750c0fd054e1d68e603eee00f273a6ac3ba339330b0d
+  sha256: d808d958e7d3462ecb69a47342fc683aa8a14e9b81e9f887bc95f1d70c2ddf21
 
 build:
   noarch: python
