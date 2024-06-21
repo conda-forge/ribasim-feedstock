@@ -23,7 +23,7 @@ requirements:
     - python >=3.10
     - geopandas
     - matplotlib-base
-    - numpy
+    - numpy <2.0
     - pandas
     - pandera >=0.18
     - pyarrow
