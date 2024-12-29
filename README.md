@@ -163,5 +163,6 @@ Feedstock Maintainers
 * [@Hofer-Julian](https://github.com/Hofer-Julian/)
 * [@Huite](https://github.com/Huite/)
 * [@SouthEndMusic](https://github.com/SouthEndMusic/)
+* [@deltares-service-account](https://github.com/deltares-service-account/)
 * [@visr](https://github.com/visr/)
 
