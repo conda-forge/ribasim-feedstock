@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "ribasim" %}
 {% set version = "2024.11.0" %}
 
@@ -6,21 +7,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 2ff9e54008cdb452e82ace5d3a9e30ea833b3365048ac911e0493f01f95d4401
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - hatchling
     - pip
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - geopandas
     - matplotlib-base
     - numpy
@@ -38,6 +39,7 @@ test:
     - ribasim
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
