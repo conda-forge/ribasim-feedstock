@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -23,7 +23,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - datacompy >=0.16
-    - geopandas >=1.0
+    - geopandas >=1.0,<1.1
     - matplotlib-base >=3.7
     - numpy >=1.25
     - pandas >=2.0
