@@ -1,4 +1,4 @@
-{% set python_min = "3.11" %}
+{% set python_min = "3.12" %}
 {% set name = "ribasim" %}
 {% set version = "2025.6.0" %}
 
@@ -24,19 +24,19 @@ requirements:
     - python >={{ python_min }}
     - datacompy >=0.16
     - geopandas >=1.0
-    - matplotlib-base >=3.7
+    - matplotlib-base >=3.9
     - netcdf4 >=1.7.1
-    - numpy >=1.25
+    - numpy >=2.0
     - packaging >=23.0
-    - pandas >=2.0
+    - pandas >=2.2
     - pandera >=0.25
     - pyarrow >=17.0
-    - pydantic >=2.0,<2.12
+    - pydantic >=2.0
     - pyogrio >=0.8
     - shapely >=2.0
     - tomli >=2.0
     - tomli-w >=1.0
-    - xarray >=2025.8.0
+    - xarray >=2023.11
 
 test:
   imports:
