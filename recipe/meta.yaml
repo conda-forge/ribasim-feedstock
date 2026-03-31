@@ -22,7 +22,6 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - datacompy >=0.16
     - geopandas >=1.0
     - matplotlib-base >=3.9
     - netcdf4 >=1.7.1
